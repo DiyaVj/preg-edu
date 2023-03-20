@@ -1,8 +1,12 @@
-
 # PregEdu
 
-<details>
-  <summary>Table of Contents</summary>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/87236107/226364340-e673aa52-6950-489b-a5c3-3daec03a1f2f.png" width=10% height=10%>
+    <br />
+  <a href="diyavj.github.io/preg-edu/"><strong>Explore the app here »</strong></a>
+</p>
+
+  ## Table of Contents
   <ol>
      <li>
       <a href="#project-structure">Project Structure</a>
@@ -12,11 +16,6 @@
     </li>
     <li>
       <a href="#our-solution">Our Solution</a>
-      <ul>
-        <li><a href="#">Pregnancy Month Blogs</a></li>
-        <li><a href="#">Health Check</a></li>
-        <li><a href="#">Community</a></li>
-      </ul>
     </li>
     <li>
       <a href="#target-audience">Target Audience</a>
@@ -26,7 +25,6 @@
      <li><a href="#future-plans">Future Plans</a></li>
       <li><a href="#team-members">Team Members</a></li>
   </ol>
-</details>
 
 ## Project Structure
 ```
