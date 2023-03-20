@@ -92,7 +92,7 @@ document.getElementById("sbpsympbtn").onclick = function () {
 };
 // is heart rate known
 document.getElementById("isheartrateknownbtn").onclick = function () {
-  alert("yes");
+  // alert("yes");
   var btn = document.getElementById("isheartrateknown-yes").checked;
   if (btn) {
     next("isheartrateknown", "pickheartrate", "isheartrateknown-yes");
@@ -153,18 +153,18 @@ function getresult(obj) {
 
   const options = {
     method: "POST",
-    url: "http://a554-223-188-136-230.ngrok.io/api/getresult",
+    url: "http://0ed6-117-250-3-86.ngrok.io/api/getresult",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(data),
   };
 
-  fetch("http://2de2-117-250-3-86.ngrok.io/api/getresult", options)
+  fetch("http://a554-223-188-136-230.ngrok.io/api/getresult", options)
     .then((response) => response.json())
     .then((response) => {
       sessionStorage.setItem("risklevel", response.risklevel);
-      window.location.href="./report.html"
+      window.location.href = "./report.html";
     })
     .catch((err) => console.error(err));
 }
