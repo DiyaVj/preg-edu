@@ -3,7 +3,7 @@
 <p align="center">
 <img src="https://user-images.githubusercontent.com/87236107/226364340-e673aa52-6950-489b-a5c3-3daec03a1f2f.png" width=10% height=10%>
     <br />
-  <a href="diyavj.github.io/preg-edu/"><strong>Explore the app here »</strong></a>
+  <a href="https://diyavj.github.io/preg-edu/"><strong>Explore the app here »</strong></a>
 </p>
 
   ## Table of Contents
