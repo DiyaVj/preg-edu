@@ -1,11 +1,14 @@
 riskstatus = sessionStorage.getItem("risklevel");
-recommend=""
-suggestion=""
+recommend=" "
+suggestion=" "
+// check if result is low risk
 if (riskstatus == "low risk") {
   suggestion = "You have";
   recommend =
     "Low-risk pregnancy care guidelines include regular prenatal checkups, a healthy diet, regular exercise, and avoiding smoking, alcohol, and drugs. It is also important to take prenatal vitamins and get enough rest. If you have any questions or concerns, you should talk to your healthcare provider";
 }
+
+// check if result is mid risk
 if (riskstatus == "mid risk") {
   suggestion =
     "Alert! Visit your doctor as soon as possible. Your health score is";
