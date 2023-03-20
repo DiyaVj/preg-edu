@@ -46,12 +46,12 @@
     <link rel="stylesheet" type="text/css" href="dist/css/main.css" />
 
     <!-- External JS -->
-    <script src="dist/js/main.js" async></script>
+    <script src="dist/js/main.js"></script>
 
     <!-- Head Closing -->
   </head>
 
-  <body>
+  <body onload="showTable()">
     <!-- Main Body  -->
 
     <!-- Header -->
@@ -82,35 +82,48 @@
     </header>
     <!-- Header Closing -->
 
-    <div>
-      <img
-        class="health-test-image"
-        src="assets/female doctor with stethoscope.png"
-        alt="Health Test"
-      />
-      <div class="health-test-content">
-        <h1 class="health-test-h-content">Health Test</h1>
-        <p class="health-test-p-content">
-          Before starting the Health Check test, we recommend that you take a moment to read the instructions carefully. It's important to provide accurate and truthful answers to the questions and provide detailed symptom information to ensure the most accurate recommendations possible.<br> Health Check feature uses a series of questions and symptom information provided by you to generate personalized recommendations based on your health status. <br>By following the instructions and providing accurate information, you can get the most out of our Health Check feature and take control of your health and well-being.
-        </p>
-        <p style="color:red" class="health-test-p-content">
-          Please keep in mind that our Health Check feature uses machine learning models to generate personalized recommendations, but the accuracy of these recommendations may vary. We advise that you use the results as a general guide and not a replacement for professional medical advice.
-        </p>
-        <button
-          onclick="window.location.href = 'test.html';"
-          class="check-risk-button"
+    <!-- Main Starting-->
+    <main class="main-heading">
+      <h1 class="content-heading">Government Schemes</h1>
+    </main>
+    <!-- Main Closing-->
+
+    <!-- <button onload="showTable()">Show Schemes</button> -->
+
+    <script>
+      function showTable() {
+        fetch("./dist/json/schemes.json")
+          .then((response) => response.json())
+          .then((data) => createTable(data));
+      }
+
+      function createTable(data) {
+        var table = "<table border=0>";
+        table += `<tr>
+                  <th>Scheme Title</th>
+                  <th>Description</th>
+                  <th>Country</th>
+                  <th>Url</th>
+                </tr>`;
+        
+        var tr = "";
+        for (let i = 0; i < data.schemes.length; i++) {
+          tr += "<tr>";
+          tr += `<td>${data.schemes[i].schemeTitle}</td>`;
+          tr += `<td>${data.schemes[i].description}</td>`;
+          tr += `<td>${data.schemes[i].country}</td>`;
+          tr += `<td>${data.schemes[i].url}</td>`;
           
-        >
-          Check Risk
-        </button>
-        <button
-          onclick="window.location.href = 'nutrition-test.html';"
-          class="nutrition-test-button"
-        >
-          Nutrition Test
-        </button>
-      </div>
-    </div>
+          tr += "</tr>";
+
+        }
+        table += tr + "</table>";
+
+        // append table to body
+        document.body.innerHTML += table;
+      }
+    </script>
+
     <!-- Body Closing   -->
   </body>
 

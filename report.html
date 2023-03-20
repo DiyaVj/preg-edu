@@ -82,35 +82,60 @@
     </header>
     <!-- Header Closing -->
 
-    <div>
-      <img
-        class="health-test-image"
-        src="assets/female doctor with stethoscope.png"
-        alt="Health Test"
-      />
-      <div class="health-test-content">
-        <h1 class="health-test-h-content">Health Test</h1>
-        <p class="health-test-p-content">
-          Before starting the Health Check test, we recommend that you take a moment to read the instructions carefully. It's important to provide accurate and truthful answers to the questions and provide detailed symptom information to ensure the most accurate recommendations possible.<br> Health Check feature uses a series of questions and symptom information provided by you to generate personalized recommendations based on your health status. <br>By following the instructions and providing accurate information, you can get the most out of our Health Check feature and take control of your health and well-being.
-        </p>
-        <p style="color:red" class="health-test-p-content">
-          Please keep in mind that our Health Check feature uses machine learning models to generate personalized recommendations, but the accuracy of these recommendations may vary. We advise that you use the results as a general guide and not a replacement for professional medical advice.
-        </p>
-        <button
-          onclick="window.location.href = 'test.html';"
-          class="check-risk-button"
-          
-        >
-          Check Risk
-        </button>
-        <button
-          onclick="window.location.href = 'nutrition-test.html';"
-          class="nutrition-test-button"
-        >
-          Nutrition Test
-        </button>
+    <!-- Main Starting-->
+    <main class="main-heading">
+      <h1 class="content-heading">Report</h1>
+    </main>
+
+    <section>
+      <div class="report-text-value-container">
+        <p id="recommendation-heading-id" class="report-text">
+            Alert! Visit your doctor as soon as possible. Your health report is.
+          </p>
+    
+          <p class="report-risk-value">Low</p>
       </div>
-    </div>
+    </section>
+
+    <section>
+        <div class="recommendation-container">
+            <h1 class="recommendation-heading">Recommendation:</h1>
+          <p class="recommendation-paragraph">
+            A creative mind looking to solve user’s problems in a way that they feel
+            easy to find what they are looking for in the fast-growing digital world
+            with simple but effective solutions and to bring efficiency according to
+            the business demands A creative mind looking to solve user’s problems in a way that they feel
+            easy to find what they are looking for in the fast-growing digital world
+            with simple but effective solutions and to bring efficiency according to
+            the business demands
+          </p>
+        </div>
+    </section>
+
+    <section>
+     <div class="recommendation-button-container">
+        <div class="recommendation-button-center">
+        <button
+        onclick="window.location.href = 'https://www.google.com/search?q=hospital+near+me';"
+        class="hospital-near-me-button"
+      >
+        Hospital near me
+      </button>
+      <button
+        onclick="window.location.href = 'https://www.google.com/search?q=inurl%3A%22medical+store%22&rlz=1C1CHBF_enIN1032IN1032&oq=inurl%3A%22medical+store%22&aqs=chrome..69i57j69i58.10945j0j7&sourceid=chrome&ie=UTF-8';"
+        class="nutrition-test-button"
+      >
+        Medical Store
+      </button>
+        </div>
+     </div>
+    </section>
+
+    <script>
+        //Color Change
+document.getElementById("recommendation-heading-id").style.color = "#F36600";
+    </script>
+
     <!-- Body Closing   -->
   </body>
 
