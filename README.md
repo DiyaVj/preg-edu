@@ -31,20 +31,28 @@
 root
 |
 |
-|____workflows
+|____workflows/
+|____API/
 |____assets
-     |_____explore.png
+     |_____months-journey/
+     |_____favicon.png
      |_____female doctor with clipboard.png
      |_____female doctor with stethoscope.png
      |_____health-test.png
      |_____join-the-community.png
      |_____learn-about-the-journey.png
-     |_____logo.png
 |____dist
      |_____css
            |______main.css
+           |______typeform.css
      |_____js
            |______main.js
+           |______typeform.js
+     |_____json
+           |______schemes.json
+|____LICENCE
+|____README.md
+|____Test.html
 |____community.html
 |____contact.html
 |____faq.html
